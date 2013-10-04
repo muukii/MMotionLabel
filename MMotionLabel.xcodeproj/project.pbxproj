@@ -21,6 +21,7 @@
 		3A6D21AB17FF1690006A0804 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6D218D17FF168F006A0804 /* UIKit.framework */; };
 		3A6D21B317FF1690006A0804 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A6D21B117FF1690006A0804 /* InfoPlist.strings */; };
 		3A6D21B517FF1690006A0804 /* MMotionLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D21B417FF1690006A0804 /* MMotionLabelTests.m */; };
+		3A6D21C117FF16BA006A0804 /* MMotionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D21C017FF16BA006A0804 /* MMotionLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		3A6D21B017FF1690006A0804 /* MMotionLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMotionLabelTests-Info.plist"; sourceTree = "<group>"; };
 		3A6D21B217FF1690006A0804 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A6D21B417FF1690006A0804 /* MMotionLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMotionLabelTests.m; sourceTree = "<group>"; };
+		3A6D21BF17FF16BA006A0804 /* MMotionLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMotionLabel.h; sourceTree = "<group>"; };
+		3A6D21C017FF16BA006A0804 /* MMotionLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMotionLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		3A6D218F17FF168F006A0804 /* MMotionLabel */ = {
 			isa = PBXGroup;
 			children = (
+				3A6D21BE17FF169A006A0804 /* MMotionLabel */,
 				3A6D219817FF168F006A0804 /* MAppDelegate.h */,
 				3A6D219917FF168F006A0804 /* MAppDelegate.m */,
 				3A6D219B17FF168F006A0804 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				3A6D21B117FF1690006A0804 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A6D21BE17FF169A006A0804 /* MMotionLabel */ = {
+			isa = PBXGroup;
+			children = (
+				3A6D21BF17FF16BA006A0804 /* MMotionLabel.h */,
+				3A6D21C017FF16BA006A0804 /* MMotionLabel.m */,
+			);
+			path = MMotionLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6D21C117FF16BA006A0804 /* MMotionLabel.m in Sources */,
 				3A6D219A17FF168F006A0804 /* MAppDelegate.m in Sources */,
 				3A6D219617FF168F006A0804 /* main.m in Sources */,
 				3A6D21A017FF168F006A0804 /* MViewController.m in Sources */,
@@ -335,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -368,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

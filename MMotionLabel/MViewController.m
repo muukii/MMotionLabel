@@ -9,6 +9,9 @@
 #import "MViewController.h"
 
 @interface MViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -24,6 +27,9 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)buttonHadler:(id)sender {
+    self.label.text = self.textField.text;
 }
 
 @end
