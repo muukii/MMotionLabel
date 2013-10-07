@@ -39,16 +39,11 @@
 #pragma mark Animation Method
 
 - (void)fadeAnimation {
-    [UIView animateWithDuration:FADEANIMATION_DURATION animations:^{
-        self.alpha = 0;
-    } completion:^(BOOL finished) {
+    [UIView transitionWithView:self duration:0.2 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
         [super setText:_willChangeText];
-        [UIView animateWithDuration:FADEANIMATION_DURATION animations:^{
-            self.alpha = 1;
-        } completion:^(BOOL finished) {
-            
-        }];
+    } completion:^(BOOL finished) {
     }];
+
 }
 /*
 // Only override drawRect: if you perform custom drawing.
