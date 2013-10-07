@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 typedef enum MMotionType : NSInteger {
-    MMotionTypeFade
+    MMotionTypeCrossDissolve
 }MMotionType;
 @interface MMotionLabel : UILabel
 

@@ -26,11 +26,12 @@
     _willChangeText = text;
     if ([self.text compare:text]) {
         switch (self.motionType) {
-            case MMotionTypeFade:
-                [self fadeAnimation];
+            case MMotionTypeCrossDissolve:
+                [self crossDissolveAnimation];
                 break;
                 
             default:
+                [self crossDissolveAnimation];
                 break;
         }
     }
@@ -38,7 +39,7 @@
 
 #pragma mark Animation Method
 
-- (void)fadeAnimation {
+- (void)crossDissolveAnimation {
     [UIView transitionWithView:self duration:0.2 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
         [super setText:_willChangeText];
     } completion:^(BOOL finished) {
